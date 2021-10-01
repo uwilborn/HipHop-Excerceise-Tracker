@@ -25,19 +25,19 @@ mongoose.connect(
   );
 
     
-const connection = mongoose.connection;
-connection.once('open', () => {
-        console.log("MongoDB database connection established successfully");
-    })
+// const connection = mongoose.connection;
+// connection.once('open', () => {
+//         console.log("MongoDB database connection established successfully");
+//     })
    
 
 
 
-const exerciseRoutes = require('./controllers/exercise');
-const userRoutes = require('./controllers/user');
+const exerciseRoutes = require('./routers/indexroutes');
+const schemaRoutes = require('./routers/schemaroutes');
 
-app.use('/exercise', exerciseRoutes);
-app.use('/user', userRoutes);
+app.use(exerciseRoutes);
+app.use(schemaRoutes);
 
 app.listen(PORT, () => {console.log(`Now listening on port: ${PORT}`)}
 );
