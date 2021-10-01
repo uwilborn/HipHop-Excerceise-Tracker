@@ -1,15 +1,15 @@
 {
-  "name": "mongoose_skeleton",
+  "name": "HipHop-Fitness-Tracker",
   "version": "1.0.0",
   "description": "",
-  "main": "backend/server.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node backend/server.js",
-    "watch": "nodemon backend/server.js",
+    "start": "node server.js",
+    "watch": "nodemon server.js",
     "seed": "node seeders/seed.js"
   },
-  "author": "",
+  "author": "Ursula Wilborn",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
