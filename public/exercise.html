@@ -24,7 +24,7 @@
         <h2>Add Your Exercise</h2>
         <form action="POST">
           <div class="workout-type">
-            <label for="type">Exercise Type:</label>
+            <label for="type">Exercise Type:</label>cardio-name
             <select name="type" id="type">
               <option disabled selected>Select Exercise Type</option>
               <option value="resistance">Resistance</option>
@@ -66,6 +66,7 @@
               <label for="resistance-duration">Duration (minutes):</label>
               <input type="number" name="resistance-duration" id="resistance-duration" placeholder="10" />
             </div>
+
           </div>
           <div class="buttons">
             <button disabled class="huge ui blue button complete">
@@ -82,8 +83,8 @@
   <div id="toast">
     Workout Added Successfully!
   </div>
-  <script src="/api.js"></script>
-  <script src="/exercise.js"></script>
+  <script src="../public/js/api.js"></script>
+  <script src="../public/js/exercise.js"></script>
 </body>
 
 </html>
